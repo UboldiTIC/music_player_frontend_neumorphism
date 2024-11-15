@@ -1,11 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 :root {
-  --blue: #EAF0F8;
+  --background-light: #D9D9D9;
+  --background-bold: #B3B2AE;
+  --line: #FFFFFF;
+  --black: #293737;
 }
 
 body {
   margin: 0;
   background: var(--blue);
   font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 60px 300px auto auto;
+  height: 100vh;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-bold);
+  
+}
+.cards {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--background-light);
+}
+
+.cards div {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  
+  border-radius: 20px;
+  background-color: var(--background-light);
+  box-shadow:  10px 10px 15px #b8b8b8,
+             -10px -10px 15px #fafafa;
 }
