@@ -16,7 +16,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 100px 300px auto auto;
+  grid-template-rows: 100px 450px 150px auto;
   height: 100vh;
   background-color: var(--background-bold);
   
@@ -49,8 +49,8 @@ body {
 }
 
 .cards div {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   display: flex;
   border-radius: 20px;
   background-color: var(--background-light);
@@ -83,7 +83,13 @@ body {
     align-items: center;
 }
 .buttons button {
-    width: 30px;
-    height: 30px;
-    background-color: var(--background-light);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--background-light);
+}
+button.button-center {
+  width: 100px;
+  height: 100px;
+  
 }
